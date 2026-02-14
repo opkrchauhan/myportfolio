@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1c3d, #020617);
+  color: #e5e7eb;
+  padding-top: 65px;
+}
+
+/* ================= CERTIFICATE LOGO ================= */
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-logo {
+  width: 42px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 12px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 40px 10%;
+}
+
+.hero img {
+  max-width: 280px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.section {
+  padding: 40px 10%;
+}
+
+.section h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* EDUCATION */
+/* ================= EDUCATION ================= */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.education-card {
+  background: #020617;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.edu-header h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.edu-header span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.edu-institute {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.edu-score {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #e5e7eb;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ================= SIMPLE SKILLS ================= */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills-list span {
+  background: #020617;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+  transition: 0.3s;
+}
+
+.skills-list span:hover {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.service-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* PROJECTS */
+/* ================= PROJECT CARD ================= */
+.project-card {
+  position: relative;
+}
+
+/* Project / Experience GitHub link */
+.exp-link {
+  font-size: 0.8rem;
+  color: #38bdf8;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #1e293b;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.exp-link:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: #38bdf8;
+}
+
+/* View Code button (top-right) */
+.project-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  color: #38bdf8;
+
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  text-decoration: none;
+  background: transparent;
+
+  transition: all 0.25s ease;
+}
+
+.project-btn:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: #38bdf8;
+  transform: translateY(-1px);
+}
+
+/* Push title down so it doesn't clash with button */
+.project-card h3 {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+}
+
+/* Tech text */
+.project-tech {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+/* UL same style as Experience */
+.project-points {
+  padding-left: 18px;
+}
+
+.project-points li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* RESUME */
+.resume-box {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  gap: 14px;
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  padding: 22px 10%;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin: 10px 0;
+}
+
+/* ================= EXPERIENCE ================= */
+.experience-card {
+  background: #020617;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.exp-header h3 {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.exp-header h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #cbd5f5;
+}
+
+.exp-date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.exp-tech {
+  margin: 8px 0 10px;
+  font-size: 0.85rem;
+  color: #38bdf8;
+}
+
+.exp-points {
+  padding-left: 18px;
+}
+
+.exp-points li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-date {
+    margin-top: 4px;
+  }
+}
+
+/* ================= CONTACT ICONS ================= */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin: 12px 0;
+}
+
+.contact-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  border: 1px solid #1e293b;
+  transition: 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #38bdf8;
+  border-color: #38bdf8;
+  transform: translateY(-3px);
+}
