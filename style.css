@@ -365,3 +365,45 @@ body {
   border-color: #38bdf8;
   transform: translateY(-3px);
 }
+
+/* ================= CODING PROFILES ================= */
+.coding-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.coding-card {
+  background: #020617;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.coding-card i {
+  font-size: 1.8rem;
+  color: #38bdf8;
+}
+
+.coding-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+.coding-card p {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.coding-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.05);
+}
